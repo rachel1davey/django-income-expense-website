@@ -55,7 +55,9 @@ jobs:
           done
 
       - name: Run migrations
+        working-directory: expenseswebsite
         run: python manage.py migrate
 
       - name: Run tests
+        working-directory: expenseswebsite
         run: python manage.py test
