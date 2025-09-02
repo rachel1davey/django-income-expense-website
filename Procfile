@@ -1,1 +1,1 @@
-web: gunicorn innerfoldername.wsgi:application
+web: gunicorn expenseswebsite.wsgi:application
