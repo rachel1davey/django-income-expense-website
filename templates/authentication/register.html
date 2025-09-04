@@ -15,6 +15,7 @@
           <h4>Register for a free account</h4>
         </div>
         <form action="{% url 'register' %}" method="post">
+            {% include "partials/_messages.html" %}
           {% csrf_token %}
 
           <div class="form-group">
